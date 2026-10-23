@@ -15,13 +15,13 @@ Releases live in the public releases repo, named in the install commands below.
 Linux and macOS:
 
 ```bash
-curl -fsSL https://github.com/JamesBarnes88/aetheric-releases/releases/latest/download/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/JamesBarnes88/aetheric-releases/main/install.sh | sh
 ```
 
 Windows (PowerShell):
 
 ```powershell
-irm https://github.com/JamesBarnes88/aetheric-releases/releases/latest/download/install.ps1 | iex
+irm https://raw.githubusercontent.com/JamesBarnes88/aetheric-releases/main/install.ps1 | iex
 ```
 
 Homebrew: `brew install <owner>/<tap>/aetheric`, once the tap is published.
