@@ -55,7 +55,10 @@ Same Wi-Fi without Tailscale: `aetheric remote enable --lan` (the traffic is not
 
 ## The desktop app
 
-Install it and open it: it uses the daemon already running for you, or starts its own. To pair a
+Install it and open it: it uses the daemon already running for you. When none is, it starts one
+through the `aetheric` CLI if you have it (through its service, if installed), or its own copy when
+the CLI is missing or older; it then offers to update the CLI, since the two share one database.
+On Linux the app's command is `aetheric-desktop`; `aetheric` is always the CLI. To pair a
 phone, use **Settings › Devices**. To drive Aetheric on another computer, enter that machine's
 address and a code from `aetheric pair` there under **This app connects to**.
 
