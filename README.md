@@ -6,7 +6,7 @@ Aetheric is three things that share one daemon:
 | --- | --- | --- |
 | **aetheric** (daemon + CLI) | One binary: the API server, the agents' runner, and the `aetheric` command | `install.sh` / `install.ps1`, or Homebrew |
 | **Aetheric Desktop** | The app, with its own copy of the daemon | AppImage / .deb, .dmg, Windows installer |
-| **Aetheric for Android** | The app for your phone; drives a daemon on your computer | APK from the releases page |
+| **Aetheric for Android** | The app for your phone; drives a daemon on your computer | `aetheric-<version>-android.apk` from the releases page |
 
 Releases live in the public releases repo, named in the install commands below.
 
@@ -15,13 +15,13 @@ Releases live in the public releases repo, named in the install commands below.
 Linux and macOS:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/JamesBarnes88/aetheric-releases/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Castle-Software-LLC/aetheric-releases/main/install.sh | sh
 ```
 
 Windows (PowerShell):
 
 ```powershell
-irm https://raw.githubusercontent.com/JamesBarnes88/aetheric-releases/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/Castle-Software-LLC/aetheric-releases/main/install.ps1 | iex
 ```
 
 Homebrew: `brew install <owner>/<tap>/aetheric`, once the tap is published.
@@ -49,6 +49,7 @@ aetheric remote enable --tailscale
 aetheric pair                          # a one-time code and QR, valid 5 minutes
 ```
 
+Install the APK on the phone (allow installs from your browser or files app when Android asks).
 In the Android app, choose **Connect** and scan the QR (or enter the address and the code).
 `aetheric devices` lists paired devices; `aetheric devices revoke <name>` cuts one off at once.
 Same Wi-Fi without Tailscale: `aetheric remote enable --lan` (the traffic is not encrypted there).

@@ -9,7 +9,7 @@
 # by default the newest published release.
 set -eu
 
-REPO="${AETHERIC_RELEASES_REPO:-JamesBarnes88/aetheric-releases}"
+REPO="${AETHERIC_RELEASES_REPO:-Castle-Software-LLC/aetheric-releases}"
 API="${AETHERIC_GITHUB_API:-https://api.github.com}"
 DEST="${AETHERIC_INSTALL_DIR:-$HOME/.local/bin}"
 

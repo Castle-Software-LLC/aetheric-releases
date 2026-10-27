@@ -7,7 +7,7 @@
 # adds that folder to your user PATH. $env:AETHERIC_VERSION pins a version.
 $ErrorActionPreference = 'Stop'
 
-$Repo = if ($env:AETHERIC_RELEASES_REPO) { $env:AETHERIC_RELEASES_REPO } else { 'JamesBarnes88/aetheric-releases' }
+$Repo = if ($env:AETHERIC_RELEASES_REPO) { $env:AETHERIC_RELEASES_REPO } else { 'Castle-Software-LLC/aetheric-releases' }
 $Api = if ($env:AETHERIC_GITHUB_API) { $env:AETHERIC_GITHUB_API } else { 'https://api.github.com' }
 $Dest = if ($env:AETHERIC_INSTALL_DIR) { $env:AETHERIC_INSTALL_DIR } else { Join-Path $env:LOCALAPPDATA 'Programs\Aetheric' }
 
