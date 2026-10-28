@@ -35,9 +35,25 @@ aetheric service install              # run the daemon with your session (system
 aetheric status
 ```
 
-Needs: git. Claude Code is downloaded for you (the exact version Aetheric is built against).
-Your Claude sign-in is Claude Code's own, in your home folder; Aetheric never sees the
-credentials.
+Needs: git. Claude Code is downloaded for you (the version Aetheric is built against;
+newer patch releases of it also pass `doctor`). Your Claude sign-in is Claude Code's own,
+in your home folder; Aetheric never sees the credentials.
+
+## The desktop app on macOS
+
+The Mac app isn't signed with an Apple Developer ID yet, so the first time you open it macOS
+says Apple could not verify it. Open **System Settings › Privacy & Security**, find the note
+about Aetheric near the bottom and click **Open Anyway**, then confirm. After that it opens
+normally.
+
+If macOS won't offer Open Anyway, clear the download quarantine flag yourself:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/Aetheric.app
+```
+
+Until the app has a Developer ID, it can't update itself on a Mac: install each new version
+from its `.dmg`.
 
 ## Your phone
 
